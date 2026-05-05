@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* LOGIN PAGE */
+.login-body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f2937;
+}
+
+.login-box {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #1d4ed8;
+}
+
+/* DASHBOARD */
+.topbar {
+    height: 60px;
+    background: #111827;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.layout {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    background: #1f2937;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #374151;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    background: #f3f4f6;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 8px;
+}
+/* ===== DASHBOARD DARK MODE FIX ===== */
+
+/* Welcome card */
+body.dark-mode .welcome-card {
+    background: #1e293b;
+    color: #e2e8f0;
+}
+
+body.dark-mode .welcome-card p {
+    color: #cbd5f5;
+}
+
+/* Stat cards */
+body.dark-mode .stat-card {
+    background: #1e293b;
+}
+
+body.dark-mode .stat-content h3 {
+    color: #cbd5f5;
+}
+
+body.dark-mode .stat-number {
+    color: #f1f5f9;
+}
+
+body.dark-mode .stat-label {
+    color: #94a3b8;
+}
+
+/* Activity section */
+body.dark-mode .activity-section {
+    background: #1e293b;
+}
+
+body.dark-mode .activity-header h2 {
+    color: #e2e8f0;
+}
+
+/* Activity items */
+body.dark-mode .activity-item {
+    background: #0f172a;
+}
+
+body.dark-mode .activity-item:hover {
+    background: #1e293b;
+}
+
+body.dark-mode .activity-text {
+    color: #e2e8f0;
+}
+
+body.dark-mode .activity-time {
+    color: #94a3b8;
+}
+
+/* No activity */
+body.dark-mode .no-activity {
+    color: #94a3b8;
+}
+
+/* Page title */
+body.dark-mode .page-title {
+    color: #e2e8f0;
+}
